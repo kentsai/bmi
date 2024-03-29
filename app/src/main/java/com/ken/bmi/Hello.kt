@@ -5,15 +5,23 @@ class Hello {
 }
 
 fun main() {
-    val p =Person()
+//    val p =Person()
+    val p = Person("Ken",65.5f, 1.75f)
     p.hello()
+    val hank = Person("Tsai",80f,160f)
+
+    println(p.bmi())
+    println(hank.name + ":"+hank.bmi())
     //BMI
+    val wgt = 65.5f
+    val hgh = 1.7f
+    val bmi = wgt / (hgh*hgh)
+    println("BMI:" + bmi)
 
-    println("Hello Kotlin@@")
 
+//    println("Hello Kotlin@@")
 
-
-//    val age =20//cant Change
+   /* val age =20//cant Change
     val age:Int = 20
     val population:Long = 9999L //L:Long
     println(age.dec())
@@ -29,6 +37,6 @@ fun main() {
     //true false
     val isAdult = false  //true
     //Char
-    val Y = 'A'
+    val Y = 'A'*/
 
 }
