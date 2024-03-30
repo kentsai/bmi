@@ -6,6 +6,8 @@ fun main() {
     val secrete = (1..10).random()
     println("serect: $secrete")
     var num =0
+    var big =10;
+    var sml = 0;
     var bingo = false
     while(num != secrete) {
 
@@ -20,9 +22,11 @@ fun main() {
         println("Ur Num is: $num ")//${input?.length}
 
         if (num < secrete) {
-            println("PLZ enter a number between $num to 10")//${input?.length}
+            sml=  num
+            println("PLZ enter a number ($sml - $big)")//${input?.length}
         } else if (num > secrete) {
-            println("PLZ enter a number between 1 to $num")
+            big = num
+            println("PLZ enter a number ($sml - $big)")
         } else {
             println("U got it")
 
