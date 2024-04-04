@@ -9,4 +9,6 @@ fun main() {
     val age =20//val cannt change
     println(age.inc())
 
+    val c = 'A'
+    println(c)
 }
